@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1Ap | awk -vORS=, '/\/$/{print $0}/[^\/]$/{print $0}' | sed 's/,$/\n/'
