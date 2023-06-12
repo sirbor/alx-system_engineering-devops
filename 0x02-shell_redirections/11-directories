@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lRa | grep -c '^d'
+count=$(find . -mindepth 1 -maxdepth 1 -type d -not -name '.*' | wc -l) echo "Total number of directories: $count"
