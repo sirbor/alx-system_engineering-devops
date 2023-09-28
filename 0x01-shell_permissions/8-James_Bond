@@ -1,1 +1,2 @@
-8-James_Bond
+#!/bin/bash
+chmod 007 hello
